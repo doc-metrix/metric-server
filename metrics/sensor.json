@@ -1,0 +1,659 @@
+{
+    "sensors.12v": {
+        "display_name": "sensors.12v",
+        "units": "volt",
+        "max": "",
+        "min": "",
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 12 volt rail.",
+        "notes": null,
+        "source": "ipmi-sensors",
+        "device": "12 V sensor",
+        "vendors": "*",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt"
+        ]
+    },
+    "sensors.12vStandby": {
+        "display_name": "sensors.12vStandby",
+        "units": "volt",
+        "max": {
+            "critical": 13.885,
+            "non-recoverable": 14.481
+        },
+        "min": {
+            "critical": 10.685,
+            "non-recoverable": 10.045
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 12 volt standby rail. The standby rail powers the subset of components needed to remotely start the system.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "12 V Standby",
+                "sensor_number": "05h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "12 V Standby sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.3.3v": {
+        "display_name": "sensors.3.3v",
+        "units": "volt",
+        "max": {
+            "critical": 3.6602,
+            "non-recoverable": 3.8366
+        },
+        "min": {
+            "critical": 2.9545,
+            "non-recoverable": 2.7782
+        },
+        "sig_figs": 3,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 3.3 volt rail.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "3.3 V",
+                "sensor_number": "08h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "3.3 V sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.3.3vStandby": {
+        "display_name": "sensors.3.3vStandby",
+        "units": "volt",
+        "max": {
+            "critical": 3.7205,
+            "non-recoverable": 3.8765
+        },
+        "min": {
+            "critical": 2.9795,
+            "non-recoverable": 2.8235
+        },
+        "sig_figs": 3,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 3.3 volt standby rail. The standby rail powers the subset of components needed to remotely start the system.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "3.3 V Standby",
+                "sensor_number": "09h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "3.3 V Standby sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.5v": {
+        "display_name": "sensors.5v",
+        "units": "volt",
+        "max": {
+            "critical": 5.5468,
+            "non-recoverable": 5.7925
+        },
+        "min": {
+            "critical": 4.4548,
+            "non-recoverable": 4.2091
+        },
+        "sig_figs": 3,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 5 volt rail.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "5 V",
+                "sensor_number": "06h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "5 V sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.5vStandby": {
+        "display_name": "sensors.5vStandby",
+        "units": "volt",
+        "max": {
+            "critical": 5.5432,
+            "non-recoverable": 5.7898
+        },
+        "min": {
+            "critical": 4.4472,
+            "non-recoverable": 4.2006
+        },
+        "sig_figs": 3,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The voltage supplied by the power supply unit on the 5 volt standby rail. The standby rail powers the subset of components needed to remotely start the system.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "5 V Standby",
+                "sensor_number": "07h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "5 V Standby sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.cpu1Temp": {
+        "display_name": "sensors.cpu1Temp",
+        "units": "celcius",
+        "max": {
+            "critical": 96,
+            "non-recoverable": 98
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of CPU1.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "CPU1 Temp",
+                "sensor_number": "41h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "CPU1 Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.cpu2Temp": {
+        "display_name": "sensors.cpu2Temp",
+        "units": "celcius",
+        "max": {
+            "critical": 96,
+            "non-recoverable": 98
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of CPU2.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "CPU2 Temp",
+                "sensor_number": "42h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "CPU2 Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.dimmZone1Temp": {
+        "display_name": "sensors.dimmZone1Temp",
+        "units": "celcius",
+        "max": {
+            "critical": 87,
+            "non-recoverable": 92
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of memory DIMM zone 1.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "DIMM ZONE 1Temp",
+                "sensor_number": "43h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "DIMM ZONE 1Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.dimmZone2Temp": {
+        "display_name": "sensors.dimmZone2Temp",
+        "units": "celcius",
+        "max": {
+            "critical": 87,
+            "non-recoverable": 92
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of memory DIMM zone 2.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "DIMM ZONE 2Temp",
+                "sensor_number": "44h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "DIMM ZONE 1Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan1": {
+        "display_name": "sensors.fan1",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 1.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 1",
+                "sensor_number": "FAN_1"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 1 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan2": {
+        "display_name": "sensors.fan2",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 2.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 2",
+                "sensor_number": "FAN_2"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 2 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan3": {
+        "display_name": "sensors.fan3",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 3.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 3",
+                "sensor_number": "FAN_3"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 3 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan4": {
+        "display_name": "sensors.fan4",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 4.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 4",
+                "sensor_number": "FAN_4"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 4 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan5": {
+        "display_name": "sensors.fan5",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 5.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 5",
+                "sensor_number": "FAN_5"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 5 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.fan6": {
+        "display_name": "sensors.fan6",
+        "units": "RPM",
+        "max": {
+            "critical": 8960,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": 1540,
+            "non-recoverable": null
+        },
+        "sig_figs": 4,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The fan speed in revolutions per minute of fan 6.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "FAN 6",
+                "sensor_number": "FAN_6"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "FAN 6 sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.inletTemp": {
+        "display_name": "sensors.inletTemp",
+        "units": "celcius",
+        "max": {
+            "critical": 39,
+            "non-recoverable": null
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius at the inlet of the IT equipment.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "Inlet Ambient Temp",
+                "sensor_number": null
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "Inlet Ambient Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.inputCurrent": {
+        "display_name": "sensors.inputCurrent",
+        "units": "amphere",
+        "max": "",
+        "min": "",
+        "sig_figs": null,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The amount of input AC current.",
+        "notes": null,
+        "source": "ipmi-sensors",
+        "device": "input current sensor",
+        "vendors": "*",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt"
+        ]
+    },
+    "sensors.inputVoltage": {
+        "display_name": "sensors.inputVoltage",
+        "units": "volt",
+        "max": "",
+        "min": "",
+        "sig_figs": null,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The amount of input AC voltage.",
+        "notes": null,
+        "source": "ipmi-sensors",
+        "device": "input voltage sensor",
+        "vendors": "*",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt"
+        ]
+    },
+    "sensors.mezz1Temp": {
+        "display_name": "sensors.mezz1Temp",
+        "units": "celcius",
+        "max": {
+            "critical": 68,
+            "non-recoverable": 70
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of the mezzanine card.",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "MEZZ1 Temp",
+                "sensor_number": "41h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "MEZZ1 Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    },
+    "sensors.pchTemp": {
+        "display_name": "sensors.pchTemp",
+        "units": "celcius",
+        "max": {
+            "critical": 85,
+            "non-recoverable": 88
+        },
+        "min": {
+            "critical": null,
+            "non-recoverable": null
+        },
+        "sig_figs": 2,
+        "data_type": "numeric",
+        "type": "raw",
+        "formula" : null,
+        "variants": null,
+        "description": "The temperature in celcius of the platform controller hub (PCH). The PCH controls I/O functions to the CPU, and support clocking (the system clock), Flexible Display Interface (FDI), and Direct Media Interface (DMI).",
+        "notes": {
+            "sensor_info": {
+                "sensor_name": "PCH Temp",
+                "sensor_number": "45h"
+            }
+        },
+        "source": "ipmi-sensors",
+        "device": "PCH Temp sensor",
+        "vendors": "Dell PowerEdge C6220",
+        "classification": "sensors",
+        "refs": [
+            "http://www.gnu.org/software/freeipmi/",
+            "http://www.gnu.org/software/freeipmi/ipmi-sensors-output-sensor-state.txt",
+            "http://www.manualslib.com/manual/423605/Dell-Poweredge-C6220.html"
+        ]
+    }
+}
